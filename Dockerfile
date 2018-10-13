@@ -1,3 +1,8 @@
-FROM ros
-SHELL ["/bin/bash", "-c"]
-RUN source /root/catkin_ws/devel/setup.bash 
+FROM ros:kinetic-ros-base
+
+# install bootstrap tools
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    ros-kinetic-gazebo-* \
+  && rm -rf /var/lib/apt/lists/*
+
+CMD [ "gazebo" ]
