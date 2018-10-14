@@ -1,4 +1,4 @@
-FROM ros:ros-kinetic-desktop-full
+FROM osrf/ros:kinetic-desktop-full
 
 # install bootstrap tools
 RUN apt-get update \
