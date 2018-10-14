@@ -10,6 +10,8 @@ RUN apt install -y \
     ros-kinetic-turtlebot-simulator \
     ros-kinetic-turtlebot-msgs \
     ros-kinetic-kobuki ⁠\
-    ros-kinetic-yujin-ocs
+    ros-kinetic-yujin-ocs \
+    mesa-utils \
+    binutils \
 
 RUN rm -rf /var/lib/apt/lists/*
