@@ -1,6 +1,15 @@
 FROM osrf/ros:kinetic-desktop-full
 
-# install bootstrap tools
-RUN apt-get update \
-    && apt-get install --no-install-recommends -y ros-kinetic-gazebo-* \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt update
+
+RUN apt install -y \
+    ros-kinetic-gazebo-* \
+    ros-kinetic-turtlebot ⁠\
+    ros-kinetic-turtlebot-apps \
+    ros-kinetic-turtlebot-interactions \
+    ros-kinetic-turtlebot-simulator \
+    ros-kinetic-turtlebot-msgs \
+    ros-kinetic-kobuki ⁠\
+    ros-kinetic-yujin-ocs
+
+RUN rm -rf /var/lib/apt/lists/*
