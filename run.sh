@@ -10,7 +10,7 @@ docker run -it \
 	-e QT_X11_NO_MITSHM=1 \
 	-v /tmp/.X11-unix:/tmp/.X11-unix:rw \
 	--privileged \
-	osrf/ros:indigo-desktop-full
+	osrf/ros:kinetic-desktop-full
 
 xhost - $IP
 osascript -e 'quit app "XQuartz"'
