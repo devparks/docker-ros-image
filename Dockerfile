@@ -1,5 +1,7 @@
 FROM osrf/ros:indigo-desktop-full
 
+SHELL ["/bin/bash", "-c"]
+
 # Install all ROS Turtlebot stuffs
 RUN apt-get update && apt-get upgrade -y && apt-get install -y ros-indigo-turtlebot ros-indigo-turtlebot-apps ros-indigo-turtlebot-interactions ros-indigo-turtlebot-simulator ros-indigo-kobuki-ftdi ros-indigo-rocon-remocon ros-indigo-rocon-qt-library ros-indigo-ar-track-alvar-msgs
 
