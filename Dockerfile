@@ -1,8 +1,8 @@
 FROM osrf/ros:kinetic-desktop-full
 
-RUN apt update
+RUN apt-get update
 
-RUN apt install -y \
+RUN apt-get install -y \
     ros-kinetic-gazebo-* \
     ros-kinetic-turtlebot ⁠\
     ros-kinetic-turtlebot-apps \
