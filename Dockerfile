@@ -21,4 +21,4 @@ RUN . /opt/ros/indigo/setup.sh && \
     . ~/catkin_ws/devel/setup.bash
 
 # Clean-up
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
