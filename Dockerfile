@@ -8,7 +8,7 @@ RUN apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C3
 
 RUN apt-get update
 
-RUN apt-get install ros-indigo-desktop-full
+RUN apt-get install -y ros-indigo-desktop-full
 
 RUN rosdep init && rosdep update
 
